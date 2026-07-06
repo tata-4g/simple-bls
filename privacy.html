@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Simple BLS</title>
+<style>
+  :root {
+    --blue: #2F9BD6;
+    --bg: #F0F8FF;
+    --text-dark: #16232F;
+    --text-muted: #6B8098;
+    --border: #DCEEFA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+  main { max-width: 640px; width: 100%; }
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 36px 32px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+  h1 { font-size: 20px; margin: 0 0 8px; }
+  .updated { font-size: 12.5px; color: var(--text-muted); margin: 0 0 28px; }
+  h2 { font-size: 15px; margin: 28px 0 8px; }
+  h2:first-of-type { margin-top: 0; }
+  p, li { font-size: 14px; line-height: 1.8; color: var(--text-dark); }
+  p { margin: 0 0 10px; }
+  ul { padding-left: 20px; margin: 0 0 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 12px 0; }
+  th, td {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.7;
+  }
+  th { width: 30%; color: var(--text-muted); font-weight: 600; }
+  a { color: var(--blue); }
+  .back { display: inline-block; margin-top: 24px; font-size: 13px; color: var(--blue); }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">制定日：2026年7月6日</p>
+
+    <p>
+      「Simple BLS」（以下「本アプリ」）は、一次救命処置（BLS/CPR）をその場で支援する
+      スマートフォンアプリです。医師である個人開発者（谷口智哉、以下「開発者」）が
+      個人で開発・運営しています。本アプリの利用にあたって取得する情報の取り扱いについて、
+      以下のとおりお知らせします。
+    </p>
+
+    <h2>基本方針</h2>
+    <ul>
+      <li>本アプリは広告を掲載していません。広告配信のための情報収集は行いません。</li>
+      <li>アクセス解析・行動追跡（トラッキング）SDKは組み込んでいません。</li>
+      <li>会員登録・ログインの仕組みはなく、氏名やメールアドレス等の個人を特定する情報の入力を求めることもありません。</li>
+      <li>本アプリが取得する情報は、開発者が運営するサーバーには送信されません（サーバー自体を保有していません）。すべて お使いの端末内だけ に保存されます。</li>
+    </ul>
+
+    <h2>取得する情報と利用目的</h2>
+    <table>
+      <tr>
+        <th>位置情報</th>
+        <td>
+          救命処置の開始時に取得し、現在地の住所表示、119番通報時の住所オーバーレイ表示、
+          「周囲に助けを呼ぶ」機能での位置共有に利用します。端末内に記録として保存され、
+          外部には送信されません。
+        </td>
+      </tr>
+      <tr>
+        <th>マイク（録音）</th>
+        <td>
+          救命処置中の音声を端末内に録音します。文字起こしは端末内で完結するオフライン処理
+          （インターネット通信を伴いません）で行われ、録音データ・文字起こし結果とも
+          外部サーバーには送信されません。引継ぎ用のQRコードには、時刻・実施時間・住所など
+          機械的にまとめた要約のみを含み、録音の音声データや文字起こしの全文は含みません。
+        </td>
+      </tr>
+      <tr>
+        <th>「他のアプリの上に表示」権限（Android）</th>
+        <td>
+          119番通報で電話アプリに画面が切り替わっている間も住所を表示し続けるための権限です。
+          この権限自体は情報を取得・送信するものではありません。
+        </td>
+      </tr>
+    </table>
+    <p>
+      過去の記録（位置情報・録音・文字起こし結果を含む）は、アプリ内の履歴画面からいつでも
+      内容を確認し、削除することができます。削除すると、対応する録音ファイルも端末から
+      完全に削除されます。
+    </p>
+
+    <h2>外部サービスへの遷移について</h2>
+    <p>
+      本アプリの一部の機能は、外部サービスのページをブラウザで開きます。これらのページでの
+      情報の取り扱いは、本ポリシーではなく各サービスのプライバシーポリシーが適用されます。
+    </p>
+    <table>
+      <tr>
+        <th>寄付（任意のご支援）</th>
+        <td>
+          Stripe社が提供する決済ページ（Stripe Payment Links）に遷移します。
+          クレジットカード番号等の決済情報はStripe社が直接処理し、開発者・本アプリが
+          取得・保存することはありません。
+        </td>
+      </tr>
+      <tr>
+        <th>ご意見・改善案フォーム</th>
+        <td>
+          Googleフォームに遷移します。入力内容はGoogleのフォームに直接送信され、
+          本アプリを経由しません。
+        </td>
+      </tr>
+    </table>
+
+    <h2>第三者提供</h2>
+    <p>
+      法令に基づく場合を除き、本アプリが取得した情報を第三者に提供することはありません。
+    </p>
+
+    <h2>プライバシーポリシーの変更</h2>
+    <p>
+      本ポリシーの内容は、法令の変更や本アプリの機能追加に伴い、予告なく改定することが
+      あります。改定後の内容は本ページに掲載した時点で効力を生じます。
+    </p>
+
+    <h2>お問い合わせ</h2>
+    <p>
+      本ポリシーに関するお問い合わせは、下記までご連絡ください。<br>
+      運営者：谷口智哉<br>
+      メールアドレス：<a href="mailto:anesapp.support@gmail.com">anesapp.support@gmail.com</a>
+    </p>
+
+    <a class="back" href="index.html">← Simple BLSのトップへ戻る</a>
+  </div>
+</main>
+</body>
+</html>
